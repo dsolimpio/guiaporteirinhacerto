@@ -10,6 +10,45 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { BancosPage } from '../pages/bancos/bancos';
+import { AcademiasPage } from '../pages/academias/academias';
+import { AcouguesPage } from '../pages/acougues/acougues';
+import { AgropecuariaPage } from '../pages/agropecuaria/agropecuaria';
+import { AntenasPage } from '../pages/antenas/antenas';
+import { BelezaPage } from '../pages/beleza/beleza';
+import { DrogariasPage } from '../pages/drogarias/drogarias';
+import { CreditoPage } from '../pages/credito/credito';
+import { SupermercadosPage } from '../pages/supermercados/supermercados';
+import { ViagensETurismoPage } from '../pages/viagens-e-turismo/viagens-e-turismo';
+import { VeterinariosPage } from '../pages/veterinarios/veterinarios';
+import { TaxistasPage } from '../pages/taxistas/taxistas';
+import { SorveteriasPage } from '../pages/sorveterias/sorveterias';
+import { SomPage } from '../pages/som/som';
+import { SeguradorasPage } from '../pages/seguradoras/seguradoras';
+import { RestaurantesPage } from '../pages/restaurantes/restaurantes';
+import { RadiosPage } from '../pages/radios/radios';
+import { PostosDeGasolinaPage } from '../pages/postos-de-gasolina/postos-de-gasolina';
+import { PadariasPage } from '../pages/padarias/padarias';
+import { OticasPage } from '../pages/oticas/oticas';
+import { MoveisPage } from '../pages/moveis/moveis';
+import { MototaxistasPage } from '../pages/mototaxistas/mototaxistas';
+import { ModaPage } from '../pages/moda/moda';
+import { MedicosPage } from '../pages/medicos/medicos';
+import { MalhariasEConfeccoesPage } from '../pages/malharias-e-confeccoes/malharias-e-confeccoes';
+import { LanchonetesPage } from '../pages/lanchonetes/lanchonetes';
+import { InformaticaPage } from '../pages/informatica/informatica';
+import { ImoveisPage } from '../pages/imoveis/imoveis';
+import { HospedagensPage } from '../pages/hospedagens/hospedagens';
+import { GraficasEBrindesPage } from '../pages/graficas-e-brindes/graficas-e-brindes';
+import { LavaJatoPage } from '../pages/lava-jato/lava-jato';
+import { EngenhariaPage } from '../pages/engenharia/engenharia';
+import { EnsinoPage } from '../pages/ensino/ensino';
+import { FotografosPage } from '../pages/fotografos/fotografos';
+import { FunerariasPage } from '../pages/funerarias/funerarias';
+import { GasPage } from '../pages/gas/gas';
+import { VidracariasPage } from '../pages/vidracarias/vidracarias';
+import { DistribuidorasPage } from '../pages/distribuidoras/distribuidoras';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +56,47 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    BancosPage,
+    AcademiasPage,
+    AcouguesPage,
+    AgropecuariaPage,
+    AntenasPage,
+    BelezaPage,
+    CreditoPage,
+    DistribuidorasPage,
+    DrogariasPage,
+    EngenhariaPage,
+    EnsinoPage,
+    FotografosPage,
+    FunerariasPage,
+    GasPage,
+    GraficasEBrindesPage,
+    HospedagensPage,
+    ImoveisPage,
+    InformaticaPage,
+    LanchonetesPage,
+    LavaJatoPage,
+    MalhariasEConfeccoesPage,
+    MedicosPage,
+    ModaPage,
+    MototaxistasPage,
+    MoveisPage,
+    OticasPage,
+    PadariasPage,
+    PostosDeGasolinaPage,
+    RadiosPage,
+    RestaurantesPage,
+    SeguradorasPage,
+    SomPage,
+    SorveteriasPage,
+    SupermercadosPage,
+    TaxistasPage,
+    VeterinariosPage,
+    ViagensETurismoPage,
+    VidracariasPage
+  
+   
   ],
   imports: [
     BrowserModule,
@@ -29,7 +108,46 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    BancosPage,
+    AcademiasPage,
+    AcouguesPage,
+    AgropecuariaPage,
+    AntenasPage,
+    BelezaPage,
+    CreditoPage,
+    DistribuidorasPage,
+    DrogariasPage,
+    EngenhariaPage,
+    EnsinoPage,
+    FotografosPage,
+    FunerariasPage,
+    GasPage,
+    GraficasEBrindesPage,
+    HospedagensPage,
+    ImoveisPage,
+    InformaticaPage,
+    LanchonetesPage,
+    LavaJatoPage,
+    MalhariasEConfeccoesPage,
+    MedicosPage,
+    ModaPage,
+    MototaxistasPage,
+    MoveisPage,
+    DrogariasPage,
+    OticasPage,
+    PadariasPage,
+    PostosDeGasolinaPage,
+    RadiosPage,
+    SeguradorasPage,
+    SomPage,
+    SorveteriasPage,
+    SupermercadosPage,
+    TaxistasPage,
+    VeterinariosPage,
+    ViagensETurismoPage,
+    VidracariasPage
+   
   ],
   providers: [
     StatusBar,
