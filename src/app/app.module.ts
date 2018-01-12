@@ -48,6 +48,12 @@ import { FunerariasPage } from '../pages/funerarias/funerarias';
 import { GasPage } from '../pages/gas/gas';
 import { VidracariasPage } from '../pages/vidracarias/vidracarias';
 import { DistribuidorasPage } from '../pages/distribuidoras/distribuidoras';
+import { SobrePageModule } from '../pages/sobre/sobre.module';
+import { AnunciePage } from '../pages/anuncie/anuncie';
+import { AnunciePageModule } from '../pages/anuncie/anuncie.module';
+import { EmpresasPremiumPageModule } from '../pages/empresas-premium/empresas-premium.module';
+import { OlimpioComunicacaoPage } from '../pages/olimpio-comunicacao/olimpio-comunicacao';
+import { OlimpioPage } from '../pages/olimpio/olimpio';
 
 
 @NgModule({
@@ -94,13 +100,17 @@ import { DistribuidorasPage } from '../pages/distribuidoras/distribuidoras';
     TaxistasPage,
     VeterinariosPage,
     ViagensETurismoPage,
-    VidracariasPage
+    VidracariasPage,
+    OlimpioPage
   
    
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    SobrePageModule,
+    AnunciePageModule,
+    EmpresasPremiumPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -146,7 +156,8 @@ import { DistribuidorasPage } from '../pages/distribuidoras/distribuidoras';
     TaxistasPage,
     VeterinariosPage,
     ViagensETurismoPage,
-    VidracariasPage
+    VidracariasPage,
+    OlimpioPage
    
   ],
   providers: [

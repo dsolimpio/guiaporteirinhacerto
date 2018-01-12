@@ -47,6 +47,11 @@ import { TaxistasPage } from '../taxistas/taxistas';
 import { VeterinariosPage } from '../veterinarios/veterinarios';
 import { ViagensETurismoPage } from '../viagens-e-turismo/viagens-e-turismo';
 import { VidracariasPage } from '../vidracarias/vidracarias';
+import { SobrePage } from '../sobre/sobre';
+import { AnunciePage } from '../anuncie/anuncie';
+import { EmpresasPremiumPage } from '../empresas-premium/empresas-premium';
+import { OlimpioComunicacaoPage } from '../olimpio-comunicacao/olimpio-comunicacao';
+import { OlimpioPage } from '../olimpio/olimpio';
 
 @Component({
   selector: 'page-home',
@@ -363,8 +368,25 @@ export class HomePage {
     this.navCtrl.push(VidracariasPage);
 
   }
+  goToOlimpioPage() {
+    this.navCtrl.push(OlimpioPage);
 
+  }
 
+  abrirSobre() {
+    this.navCtrl.push(SobrePage)
+
+  }
+
+  abrirAnuncie() {
+    this.navCtrl.push(AnunciePage)
+
+  }
+
+  abrirEmpresas() {
+    this.navCtrl.push(EmpresasPremiumPage)
+
+  }
 
   buttons: string[];
   
@@ -382,7 +404,7 @@ export class HomePage {
        'Drupal 8: Get current user session',
        'Drupal 8: Programatically create Add another field - Example',  
        '<button ion-button full (click)="goToAcademiasPage()">Academias</button>',
-       'this.navCtrl.push(ViagensETurismoPage);',
+      
        'goToTaxistasPage()'
      ];
    }

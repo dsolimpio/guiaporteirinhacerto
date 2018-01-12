@@ -1,5 +1,8 @@
 <ion-header>
   <ion-navbar>
+      <button ion-button icon-only menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
     <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
@@ -8,7 +11,35 @@
     <ion-refresher (ionRefresh)="doRefresh($event)">
         <ion-refresher-content></ion-refresher-content>
       </ion-refresher>
-
+      <ion-menu [content]="content">
+        <ion-header>
+          
+          <ion-toolbar>
+            <ion-title>Menu</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content>
+          <ion-list>
+            <button ion-item (click)="openPage(homePage)">
+              Home
+            </button>
+            <button ion-item (click)="abrirSobre()">
+              Sobre
+            </button>
+            <button ion-item (click)="abrirAnuncie()">
+              Anuncie
+            </button>
+            <button ion-item (click)="abrirEmpresas()">
+               Empresas Premium
+              </button>
+            <button ion-item (click)="closeMenu()">
+              Close Menu
+            </button>
+          </ion-list>
+        </ion-content>
+      </ion-menu>
+      
+      <ion-nav id="nav" #content [root]="rootPage"></ion-nav>
   <img src="assets/images/logoapp.png"/>
 
   <ion-searchbar (ionInput)="getButtons($event)" [showCancelButton]="shouldShowCancel" (ionCancel)="onCancel($event)"></ion-searchbar>
@@ -67,7 +98,7 @@
   <button ion-button full (click)="goToTaxisasPage()">Taxistas</button>
   <button ion-button full (click)="goToVeterinariosPage()">Veterinários</button>
   <button ion-button full (click)="goToViagens-e-turismoPage()">Viagens e Turismo</button>
-  <button ion-button full (click)="goToVidracariassPage()">Vidraçarias</button>
+  <button ion-button full (click)="goToVidracariasPage()">Vidraçarias</button>
   <button ion-button full (click)="goToSearchPage()">Search</button>
-
+  <button ion-button full (click)="goToOlimpioPage()">Olímpio Comunicação</button>
 </ion-content>
