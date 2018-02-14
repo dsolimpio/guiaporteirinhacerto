@@ -42,8 +42,8 @@
       <ion-nav id="nav" #content [root]="rootPage"></ion-nav>
   <img src="assets/images/logoapp.png"/>
 
-  <ion-searchbar (ionInput)="getButtons($event)" [showCancelButton]="shouldShowCancel" (ionCancel)="onCancel($event)"></ion-searchbar>
-  
+  <ion-searchbar (ionInput)="getBtns($event)"></ion-searchbar>
+
    <ion-list>
      <ion-item *ngFor="let button of buttons">
        {{ button }}
